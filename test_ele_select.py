@@ -9,7 +9,7 @@ class TestAppSearch:
     def setup(self):
         caps = {}
         caps["platformName"] = "android"
-        caps["deviceName"] = "127.0.0.1:62001"
+        caps["deviceName"] = "127.0.0.1:7555"
         caps["appPackage"] ="com.xueqiu.android"
         caps["appActivity"] ="com.xueqiu.android.common.MainActivity"
         caps["noReset"] ="true"
@@ -38,7 +38,7 @@ class TestAppSearch:
        :param self:
        :return:
        '''
-       element_search=self.driver.find_element_by_id("com.xueqiu.android:id/tv_banner")
+       element_search=self.driver.find_element_by_id("com.xueqiu.android:id/home_search")
        search_enable = element_search.is_enabled()
        print(element_search.text)
        print(element_search.location)

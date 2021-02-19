@@ -12,7 +12,7 @@ class TestAppSearch:
     def setup(self):
         caps = {}
         caps["platformName"] = "android"
-        caps["deviceName"] = "127.0.0.1:62001"
+        caps["deviceName"] = "emulator-5554"
         caps["appPackage"] ="com.xueqiu.android"
         caps["appActivity"] ="com.xueqiu.android.common.MainActivity"
         caps["noReset"] ="true"

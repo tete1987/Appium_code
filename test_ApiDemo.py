@@ -9,13 +9,14 @@ from appium.webdriver.common.mobileby import MobileBy
 class TestApiDemo:
     def setup(self):
         caps = {"platformName": "android",
-                "deviceName": "127.0.0.1:62001",
+                "deviceName": "emulator-5554",
                 "appPackage": "com.example.android.apis",
                 "appActivity": "com.example.android.apis.view.PopupMenu1",
                 "skipDeviceInitialization": "true",
                 "unicodeKeyBoard": "true",
                 "resetKeyBoard": "true",
-                "automationName": "uiautomator2"
+                "automationName": "uiautomator2",
+                "dontStopAppOnReset":"true"
                 }
 
         self.driver = webdriver.Remote("http://localhost:4723/wd/hub", caps)
